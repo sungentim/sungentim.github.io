@@ -1,0 +1,15 @@
+body{
+	background: #fafafa;
+	margin: 0;
+}
+.head{
+	background: #1b39ab;
+	height: 70px;
+}
+.wrapper{
+	height: 700px;
+	width: 960px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+	margin: 10px auto;
+}
