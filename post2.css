@@ -7,12 +7,29 @@ body {
 a {
   text-decoration: none; }
 
+* {
+  box-sizing: border-box; }
+
 .app-header {
+  padding: 10px;
   background-color: #2196F3;
   height: 80px;
   border-bottom: 2px solid #fff59d;
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.app-header > * {
+  border: 1px solid red;
+  color: #FFFFFF; }
 
 .app-footer {
   background-color: #2196F3;
@@ -59,3 +76,19 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+
+.sidebar {
+  background-color: #2196F3;
+  width: 300px;
+  display: none; }
+
+@media (min-width: 500px) {
+  .app-header, .app-footer {
+    display: none; }
+  .sidebar {
+    display: block; }
+  .app-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
